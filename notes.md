@@ -22,8 +22,7 @@ across multiple lines
 > block quote
 
 
-#-----------------------------------------------
-##Rendering Markdown
+#Rendering Markdown
 
 GitHib automactically renders a Markdown that ends with the .md extension
 
@@ -64,36 +63,8 @@ GIT
 
 #git config
 
-
 minnivan@van-VM:~$ git config --global user.name "Van Tha Bik Lian"
 minnivan@van-VM:~$ git config --global user.email "vanthabikl@gmail.com"
-minnivan@van-VM:~$ ssh-keygen -t rsa -b 4096 -c "vanthabikl@gmail.com"
-Too many arguments.
-usage: ssh-keygen [-q] [-b bits] [-t dsa | ecdsa | ed25519 | rsa]
-                  [-N new_passphrase] [-C comment] [-f output_keyfile]
-       ssh-keygen -p [-P old_passphrase] [-N new_passphrase] [-f keyfile]
-       ssh-keygen -i [-m key_format] [-f input_keyfile]
-       ssh-keygen -e [-m key_format] [-f input_keyfile]
-       ssh-keygen -y [-f input_keyfile]
-       ssh-keygen -c [-P passphrase] [-C comment] [-f keyfile]
-       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
-       ssh-keygen -B [-f input_keyfile]
-       ssh-keygen -D pkcs11
-       ssh-keygen -F hostname [-f known_hosts_file] [-l]
-       ssh-keygen -H [-f known_hosts_file]
-       ssh-keygen -R hostname [-f known_hosts_file]
-       ssh-keygen -r hostname [-f input_keyfile] [-g]
-       ssh-keygen -G output_file [-v] [-b bits] [-M memory] [-S start_point]
-       ssh-keygen -T output_file -f input_file [-v] [-a rounds] [-J num_lines]
-                  [-j start_line] [-K checkpt] [-W generator]
-       ssh-keygen -s ca_key -I certificate_identity [-h] [-U]
-                  [-D pkcs11_provider] [-n principals] [-O option]
-                  [-V validity_interval] [-z serial_number] file ...
-       ssh-keygen -L [-f input_keyfile]
-       ssh-keygen -A
-       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
-                  file ...
-       ssh-keygen -Q -f krl_file file ...
 minnivan@van-VM:~$ ssh-keygen -t rsa -b 4096 -C "vanthabikl@gmail.com"
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/minnivan/.ssh/id_rsa): 
@@ -118,13 +89,6 @@ The key's randomart image is:
 |        + +.o+.. |
 |         ..o=o.  |
 +----[SHA256]-----+
-minnivan@van-VM:~$ evel "$(ssh-agent -s)"
-
-Command 'evel' not found, did you mean:
-
-  command 'evil' from deb lxqt-build-tools
-
-Try: sudo apt install <deb name>
 
 minnivan@van-VM:~$ eval "$(ssh-agent -s)"
 Agent pid 733
@@ -133,402 +97,6 @@ bash: ssh-add~/.ssh/id_rsa: No such file or directory
 minnivan@van-VM:~$ ssh-add ~/.ssh/id_rsa
 Enter passphrase for /home/minnivan/.ssh/id_rsa: 
 Identity added: /home/minnivan/.ssh/id_rsa (/home/minnivan/.ssh/id_rsa)
-
--------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-#repo - dadada - using git
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-
-minnivan@van-VM:~/Desktop$ mkdir git_practice
-minnivan@van-VM:~/Desktop$ cd git_practice/
-minnivan@van-VM:~/Desktop/git_practice$ git init
-Initialized empty Git repository in /home/minnivan/Desktop/git_practice/.git/
-minnivan@van-VM:~/Desktop/git_practice$ ls
-minnivan@van-VM:~/Desktop/git_practice$ ls
-minnivan@van-VM:~/Desktop/git_practice$ ls -la
-total 12
-drwxr-xr-x 3 minnivan minnivan 4096 Dec 20 21:56 .
-drwxr-xr-x 3 minnivan minnivan 4096 Dec 20 21:56 ..
-drwxr-xr-x 7 minnivan minnivan 4096 Dec 20 21:56 .git
-minnivan@van-VM:~/Desktop/git_practice$ ls -a
-.  ..  .git
-minnivan@van-VM:~/Desktop/git_practice$ cd .git
-minnivan@van-VM:~/Desktop/git_practice/.git$ ls
-branches  config  description  HEAD  hooks  info  objects  refs
-minnivan@van-VM:~/Desktop/git_practice/.git$ cd ..
-minnivan@van-VM:~/Desktop/git_practice$ 
-
-
-
-minnivan@van-VM:~/Desktop/git_practice$ vim books.md 
-minnivan@van-VM:~/Desktop/git_practice$ ls
-books.md
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	books.md
-
-nothing added to commit but untracked files present (use "git add" to track)
-minnivan@van-VM:~/Desktop/git_practice$ git add books.md 
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-	new file:   books.md
-
-minnivan@van-VM:~/Desktop/git_practice$ git commit -m "initial commit"
-[master (root-commit) beaf66e] initial commit
- 1 file changed, 7 insertions(+)
- create mode 100644 books.md
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-nothing to commit, working tree clean
-minnivan@van-VM:~/Desktop/git_practice$ git log [--oneline]
-
-
-
-
-------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-#removing files
-----------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-minnivan@van-VM:~/Desktop/git_practice$ touch removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ ls
-movies.md  removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	.Rhistory
-	removeMe.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-minnivan@van-VM:~/Desktop/git_practice$ git add removeMe.txt 
-minnivan@van-VM:~/Desktop/git_practice$ ls
-movies.md  removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	new file:   removeMe.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	.Rhistory
-
-minnivan@van-VM:~/Desktop/git_practice$ git commit -m "add"
-[master 0ae80be] add
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	.Rhistory
-
-nothing added to commit but untracked files present (use "git add" to track)
-minnivan@van-VM:~/Desktop/git_practice$ git add .Rhistory
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	new file:   .Rhistory
-
-minnivan@van-VM:~/Desktop/git_practice$ git commit -m "R"
-[master ee23e68] R
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 .Rhistory
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-nothing to commit, working tree clean
-minnivan@van-VM:~/Desktop/git_practice$ git log
-commit ee23e6859fa124fd6850ab19547b7b0dc916ed74 (HEAD -> master)
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 11:49:09 2018 -0800
-
-    R
-
-commit 0ae80be0f663300190e613d4ad85168f525a56d5
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 11:48:22 2018 -0800
-
-    add
-
-commit 7af071fa4349f315d9bc609fa7473040eae32602
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:46:43 2018 -0800
-
-    delete books.md file
-
-commit 69fd559a637fc0394db63534b47b0351a1b779e4
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:38:06 2018 -0800
-
-    rename file
-
-commit 50c56fbf4262c93307a8da49b40af64c33a89734
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:32:05 2018 -0800
-
-    add two more movies
-
-commit beaf66e9b23a22573224a3642cee597b3895eae5
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:14:09 2018 -0800
-
-    initial commit
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-nothing to commit, working tree clean
-minnivan@van-VM:~/Desktop/git_practice$ git log
-commit ee23e6859fa124fd6850ab19547b7b0dc916ed74 (HEAD -> master)
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 11:49:09 2018 -0800
-
-    R
-
-commit 0ae80be0f663300190e613d4ad85168f525a56d5
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 11:48:22 2018 -0800
-
-    add
-
-commit 7af071fa4349f315d9bc609fa7473040eae32602
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:46:43 2018 -0800
-
-    delete books.md file
-
-commit 69fd559a637fc0394db63534b47b0351a1b779e4
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:38:06 2018 -0800
-
-    rename file
-
-commit 50c56fbf4262c93307a8da49b40af64c33a89734
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:32:05 2018 -0800
-
-    add two more movies
-minnivan@van-VM:~/Desktop/git_practice$ git ls-files
-.Rhistory
-movies.md
-removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ git rm removeMe.txt 
-rm 'removeMe.txt'
-minnivan@van-VM:~/Desktop/git_practice$ git ls-files
-.Rhistory
-movies.md
-minnivan@van-VM:~/Desktop/git_practice$ git rm .Rhistory 
-rm '.Rhistory'
-minnivan@van-VM:~/Desktop/git_practice$ git ls-files
-movies.md
-minnivan@van-VM:~/Desktop/git_practice$ ls
-movies.md
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	deleted:    .Rhistory
-	deleted:    removeMe.txt
-
-minnivan@van-VM:~/Desktop/git_practice$ git reset HEAD .
-Unstaged changes after reset:
-D	.Rhistory
-D	removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	deleted:    .Rhistory
-	deleted:    removeMe.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-minnivan@van-VM:~/Desktop/git_practice$ git rm .
-fatal: not removing '.' recursively without -r
-minnivan@van-VM:~/Desktop/git_practice$ git rm . -r
-rm '.Rhistory'
-rm 'movies.md'
-rm 'removeMe.txt'
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	deleted:    .Rhistory
-	deleted:    movies.md
-	deleted:    removeMe.txt
-
-minnivan@van-VM:~/Desktop/git_practice$ git reset HEAD .
-Unstaged changes after reset:
-D	.Rhistory
-D	movies.md
-D	removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ git ls-files
-.Rhistory
-movies.md
-removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	deleted:    .Rhistory
-	deleted:    movies.md
-	deleted:    removeMe.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-minnivan@van-VM:~/Desktop/git_practice$ git rm .Rhistory 
-rm '.Rhistory'
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	deleted:    .Rhistory
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	deleted:    movies.md
-	deleted:    removeMe.txt
-
-minnivan@van-VM:~/Desktop/git_practice$ git rm movies.md 
-rm 'movies.md'
-minnivan@van-VM:~/Desktop/git_practice$ git staus
-git: 'staus' is not a git command. See 'git --help'.
-
-The most similar command is
-	status
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	deleted:    .Rhistory
-	deleted:    movies.md
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	deleted:    removeMe.txt
-
-minnivan@van-VM:~/Desktop/git_practice$ git rm removeMe.txt 
-rm 'removeMe.txt'
-minnivan@van-VM:~/Desktop/git_practice$ ls
-minnivan@van-VM:~/Desktop/git_practice$ ls
-minnivan@van-VM:~/Desktop/git_practice$ git ls-files
-minnivan@van-VM:~/Desktop/git_practice$ git log
-commit ee23e6859fa124fd6850ab19547b7b0dc916ed74 (HEAD -> master)
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 11:49:09 2018 -0800
-
-    R
-
-commit 0ae80be0f663300190e613d4ad85168f525a56d5
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 11:48:22 2018 -0800
-
-    add
-
-commit 7af071fa4349f315d9bc609fa7473040eae32602
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:46:43 2018 -0800
-
-    delete books.md file
-
-commit 69fd559a637fc0394db63534b47b0351a1b779e4
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:38:06 2018 -0800
-
-    rename file
-
-commit 50c56fbf4262c93307a8da49b40af64c33a89734
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:32:05 2018 -0800
-
-    add two more movies
-minnivan@van-VM:~/Desktop/git_practice$ git commit -m "delete all files"
-[master 242a703] delete all files
- 3 files changed, 10 deletions(-)
- delete mode 100644 .Rhistory
- delete mode 100644 movies.md
- delete mode 100644 removeMe.txt
-minnivan@van-VM:~/Desktop/git_practice$ git status
-On branch master
-nothing to commit, working tree clean
-minnivan@van-VM:~/Desktop/git_practice$ git log
-commit 242a7037ba3ac7dacb29dda8b25757f9040c2dad (HEAD -> master)
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 12:14:04 2018 -0800
-
-    delete all files
-
-commit ee23e6859fa124fd6850ab19547b7b0dc916ed74
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 11:49:09 2018 -0800
-
-    R
-
-commit 0ae80be0f663300190e613d4ad85168f525a56d5
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Fri Dec 21 11:48:22 2018 -0800
-
-    add
-
-commit 7af071fa4349f315d9bc609fa7473040eae32602
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:46:43 2018 -0800
-
-    delete books.md file
-
-commit 69fd559a637fc0394db63534b47b0351a1b779e4
-Author: Van Tha Bik Lian <vanthabikl@gmail.com>
-Date:   Thu Dec 20 22:38:06 2018 -0800
-
-    rename file
-minnivan@van-VM:~/Desktop/git_practice$ 
-minnivan@van-VM:~/Desktop/git_practice$ 
-
-
----------------------------------------------------------
-#.gitignore
-----------------------------------------------------------
-
-Note that the easiest way to create the .gitignore file is to use your 
-preferred text editor (e.g., Atom); select File > New from the menu and 
-choose to make the .gitignore file directly inside your repo.
-
-If you are on a Mac, we strongly suggest globally ignoring your .DS_Store file. 
-There’s no need to ever share or track this file. To always ignore this file on 
-your machine, simply run these lines of code:
-
- Run these lines on your terminal to configure git to ignore .DS_Store
-git config --global core.excludesfile ~/.gitignore
-echo .DS_Store >> ~/.gitignore
-
 
 
 Command Summary
@@ -559,4 +127,21 @@ look up commands
 
 ` scp MY_LOCAL_FILE username@hostname:path/to/destination `
 
+
+#Creating a repo to push
+minnivan@van-VM:~/Desktop/Notes$ git remote add origin https://github.com/MinniVan/Notes.git
+minnivan@van-VM:~/Desktop/Notes$ git remote -v
+origin	https://github.com/MinniVan/Notes.git (fetch)
+origin	https://github.com/MinniVan/Notes.git (push)
+minnivan@van-VM:~/Desktop/Notes$ git push -u origin master
+Username for 'https://github.com': MinniVan
+Password for 'https://MinniVan@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 4.33 KiB | 4.33 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MinniVan/Notes.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
 
