@@ -135,4 +135,28 @@ GIT
        minnivan@van-VM:~/Desktop/Notes$ git remote -v
        minnivan@van-VM:~/Desktop/Notes$ git push -u origin master
 
+### Reverting back to an older version
+       
+       git checkout COMMIT_HASH FILENAME
+       - replace COMMIT_HAS and FILE name
+       - with the commit ID hash and the 
+       - the file you want to revert
+       - "--" can be used as the commit hash
+       - to refer to the _most recent commit_ 
 
+       git checkout master | this gets the most recent
+       version of the master branch
+
+	git revert COMMIT_HASH --no-edit
+
+	This command will determine which changes the 
+       specified commit made to the files, and then apply 
+       the opposite changes to effectively “back out” the 
+       commit. Note that this does not go back to the given 
+       commit number (that’s what git checkout is for!), but 
+       rather reverses only the commit you specify.The git revert 
+       command does create a new commit (the --no-edit option 
+       tells git that you don’t want to include a custom commit message). 
+       This is great from an archival point of view: you never 
+       “destroy history” and lose the record of which changes were made 
+       and then reverted. History is important; don’t mess with it!
