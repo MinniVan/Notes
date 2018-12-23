@@ -129,6 +129,7 @@ look up commands
 
 
 #Creating a repo to push
+
        minnivan@van-VM:~/Desktop/Notes$ git remote add origin URL
        minnivan@van-VM:~/Desktop/Notes$ git remote -v
        minnivan@van-VM:~/Desktop/Notes$ git push -u origin master
