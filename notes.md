@@ -3,6 +3,9 @@ _text_   --> italicized
 'text'   --> inline code
 --text-- --> strike through
 
+From the texbook "Programming Skills for Data Science"
+       - by Michael Freeman | Joel Ross
+
 # TOP Level Header
 ## Secound Level Header
 ### ...etc
