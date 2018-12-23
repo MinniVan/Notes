@@ -61,11 +61,10 @@ GIT
              (combined) back together without you needing to manually copy and paste
              different pieces of the code. This makes it easy to separate and then 
              recombine work from different developers.
-#------------------------------------
 
 #git config
 
-#-------------------------------------
+
 minnivan@van-VM:~$ git config --global user.name "Van Tha Bik Lian"
 minnivan@van-VM:~$ git config --global user.email "vanthabikl@gmail.com"
 minnivan@van-VM:~$ ssh-keygen -t rsa -b 4096 -c "vanthabikl@gmail.com"
@@ -135,12 +134,11 @@ minnivan@van-VM:~$ ssh-add ~/.ssh/id_rsa
 Enter passphrase for /home/minnivan/.ssh/id_rsa: 
 Identity added: /home/minnivan/.ssh/id_rsa (/home/minnivan/.ssh/id_rsa)
 
-
-#-------------------------------------------------------------------------------
-#--------------------------------------------------------------------------------
-#--------------------repo - dadada - using git------------------------------------
-#---------------------------------------------------------------------------------
-#---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+#repo - dadada - using git
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 
 minnivan@van-VM:~/Desktop$ mkdir git_practice
 minnivan@van-VM:~/Desktop$ cd git_practice/
@@ -200,10 +198,10 @@ minnivan@van-VM:~/Desktop/git_practice$ git log [--oneline]
 
 
 
-#------------------------------------------------------------------------------------------
-#----------------------------------------------------------------------------------------
-#----------------------------removing files --------------------------------------------
-#----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+#removing files
+----------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 minnivan@van-VM:~/Desktop/git_practice$ touch removeMe.txt
 minnivan@van-VM:~/Desktop/git_practice$ ls
@@ -515,9 +513,9 @@ minnivan@van-VM:~/Desktop/git_practice$
 minnivan@van-VM:~/Desktop/git_practice$ 
 
 
-#-------------------------------------------------------------
-#------------------.gitignore--------------------------
-#----------------------------------------------------------
+---------------------------------------------------------
+#.gitignore
+----------------------------------------------------------
 
 Note that the easiest way to create the .gitignore file is to use your 
 preferred text editor (e.g., Atom); select File > New from the menu and 
@@ -556,7 +554,7 @@ look up commands
 # Search *.extension files for "data", then perfrom a word count on the results
 	grep -io data *.extension | wc -w
 
-#--------------------------
+
 #Securly copy the local file [file]  into the projects folder on the remote machine
 
 ` scp MY_LOCAL_FILE username@hostname:path/to/destination `
