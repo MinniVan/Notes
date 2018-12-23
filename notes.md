@@ -63,40 +63,40 @@ GIT
 
 #git config
 
-minnivan@van-VM:~$ git config --global user.name "Van Tha Bik Lian"
-minnivan@van-VM:~$ git config --global user.email "vanthabikl@gmail.com"
-minnivan@van-VM:~$ ssh-keygen -t rsa -b 4096 -C "vanthabikl@gmail.com"
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/minnivan/.ssh/id_rsa): 
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Passphrases do not match.  Try again.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /home/minnivan/.ssh/id_rsa.
-Your public key has been saved in /home/minnivan/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:FFzA366YU3GTtOP56FpY2Se7pJuDTACm2EZg5oyGVk8 vanthabikl@gmail.com
-The key's randomart image is:
-+---[RSA 4096]----+
-|  +o E ooo.      |
-|.*. + o o.  .    |
-|ooo+ + ... o o   |
-|o . +  .. o Bo   |
-|   .    S. =o+o .|
-|          oo+  + |
-|         *.o.oo  |
-|        + +.o+.. |
-|         ..o=o.  |
-+----[SHA256]-----+
+       minnivan@van-VM:~$ git config --global user.name "Van Tha Bik Lian"
+       minnivan@van-VM:~$ git config --global user.email "vanthabikl@gmail.com"
+       minnivan@van-VM:~$ ssh-keygen -t rsa -b 4096 -C "vanthabikl@gmail.com"
+       Generating public/private rsa key pair.
+       Enter file in which to save the key (/home/minnivan/.ssh/id_rsa): 
+       Enter passphrase (empty for no passphrase): 
+       Enter same passphrase again: 
+       Passphrases do not match.  Try again.
+       Enter passphrase (empty for no passphrase): 
+       Enter same passphrase again: 
+       Your identification has been saved in /home/minnivan/.ssh/id_rsa.
+       Your public key has been saved in /home/minnivan/.ssh/id_rsa.pub.
+       The key fingerprint is:
+       SHA256:FFzA366YU3GTtOP56FpY2Se7pJuDTACm2EZg5oyGVk8 vanthabikl@gmail.com
+       The key's randomart image is:
+       +---[RSA 4096]----+
+       |  +o E ooo.      |
+       |.*. + o o.  .    |
+       |ooo+ + ... o o   |
+       |o . +  .. o Bo   |
+       |   .    S. =o+o .|
+       |          oo+  + |
+       |         *.o.oo  |
+       |        + +.o+.. |
+       |         ..o=o.  |
+       +----[SHA256]-----+
 
-minnivan@van-VM:~$ eval "$(ssh-agent -s)"
-Agent pid 733
-minnivan@van-VM:~$ ssh-add~/.ssh/id_rsa
-bash: ssh-add~/.ssh/id_rsa: No such file or directory
-minnivan@van-VM:~$ ssh-add ~/.ssh/id_rsa
-Enter passphrase for /home/minnivan/.ssh/id_rsa: 
-Identity added: /home/minnivan/.ssh/id_rsa (/home/minnivan/.ssh/id_rsa)
+       minnivan@van-VM:~$ eval "$(ssh-agent -s)"
+       Agent pid 733
+       minnivan@van-VM:~$ ssh-add~/.ssh/id_rsa
+       bash: ssh-add~/.ssh/id_rsa: No such file or directory
+       minnivan@van-VM:~$ ssh-add ~/.ssh/id_rsa
+       Enter passphrase for /home/minnivan/.ssh/id_rsa: 
+       Identity added: /home/minnivan/.ssh/id_rsa (/home/minnivan/.ssh/id_rsa)
 
 
 Command Summary
@@ -129,19 +129,8 @@ look up commands
 
 
 #Creating a repo to push
-minnivan@van-VM:~/Desktop/Notes$ git remote add origin https://github.com/MinniVan/Notes.git
-minnivan@van-VM:~/Desktop/Notes$ git remote -v
-origin	https://github.com/MinniVan/Notes.git (fetch)
-origin	https://github.com/MinniVan/Notes.git (push)
-minnivan@van-VM:~/Desktop/Notes$ git push -u origin master
-Username for 'https://github.com': MinniVan
-Password for 'https://MinniVan@github.com': 
-Counting objects: 3, done.
-Delta compression using up to 2 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 4.33 KiB | 4.33 MiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/MinniVan/Notes.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
+       minnivan@van-VM:~/Desktop/Notes$ git remote add origin URL
+       minnivan@van-VM:~/Desktop/Notes$ git remote -v
+       minnivan@van-VM:~/Desktop/Notes$ git push -u origin master
+
 
