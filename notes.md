@@ -137,17 +137,17 @@ GIT
 
 ### Reverting back to an older version
        
-       git checkout COMMIT_HASH FILENAME
-       - replace COMMIT_HAS and FILE name
-       - with the commit ID hash and the 
-       - the file you want to revert
-       - "--" can be used as the commit hash
-       - to refer to the _most recent commit_ 
+       **git checkout COMMIT_HASH FILENAME**
+       replace COMMIT_HAS and FILE name
+       with the commit ID hash and the 
+       the file you want to revert
+       "--" can be used as the commit hash
+       to refer to the _most recent commit_
 
-       git checkout master | this gets the most recent
+       **git checkout master** | this gets the most recent
        version of the master branch
 
-	git revert COMMIT_HASH --no-edit
+	**git revert COMMIT_HASH --no-edit**
 
 	This command will determine which changes the 
        specified commit made to the files, and then apply 
@@ -160,3 +160,5 @@ GIT
        This is great from an archival point of view: you never 
        “destroy history” and lose the record of which changes were made 
        and then reverted. History is important; don’t mess with it!
+
+
