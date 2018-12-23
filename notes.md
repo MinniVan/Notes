@@ -22,7 +22,7 @@ across multiple lines
 > block quote
 
 
-#Rendering Markdown
+### Rendering Markdown
 
 GitHib automactically renders a Markdown that ends with the .md extension
 
@@ -61,7 +61,7 @@ GIT
              different pieces of the code. This makes it easy to separate and then 
              recombine work from different developers.
 
-#git config
+### git config
 
        minnivan@van-VM:~$ git config --global user.name "Van Tha Bik Lian"
        minnivan@van-VM:~$ git config --global user.email "vanthabikl@gmail.com"
@@ -99,7 +99,7 @@ GIT
        Identity added: /home/minnivan/.ssh/id_rsa (/home/minnivan/.ssh/id_rsa)
 
 
-#Command Summary
+### Command Summary
 
        git status                | Checks the status of a repo
        git add                   | Add file to the staging area
@@ -111,7 +111,7 @@ GIT
 
 
 
-look up commands
+#### look up commands
 
        command 'fconfig' from deb redboot-tools
        command 'zconfig' from deb python-zconfig
@@ -120,16 +120,16 @@ look up commands
        command 'mconfig' from deb mono-devel
 
 
-# Search *.extension files for "data", then perfrom a word count on the results
+### Search *.extension files for "data", then perfrom a word count on the results
 	grep -io data *.extension | wc -w
 
 
-#Securly copy the local file [file]  into the projects folder on the remote machine
+### Securly copy the local file [file]  into the projects folder on the remote machine
 
 ` scp MY_LOCAL_FILE username@hostname:path/to/destination `
 
 
-#Creating a repo to push
+### Creating a repo to push
 
        minnivan@van-VM:~/Desktop/Notes$ git remote add origin URL
        minnivan@van-VM:~/Desktop/Notes$ git remote -v
