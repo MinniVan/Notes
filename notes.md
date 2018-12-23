@@ -99,24 +99,25 @@ GIT
        Identity added: /home/minnivan/.ssh/id_rsa (/home/minnivan/.ssh/id_rsa)
 
 
-Command Summary
+#Command Summary
 
-git status                | Checks the status of a repo
-git add                   | Add file to the staging area
-git commit -m "message"   | Commit changes
-git clone		  | Copy repo to local machine
-git push origin master    | Upload commits to GitHub
-git pull		  | Download commits from GitHub
+       git status                | Checks the status of a repo
+       git add                   | Add file to the staging area
+       git commit -m "message"   | Commit changes
+       git clone		  | Copy repo to local machine
+       git push origin master    | Upload commits to GitHub
+       git pull		  | Download commits from GitHub
 
 
 
 
 look up commands
-  command 'fconfig' from deb redboot-tools
-  command 'zconfig' from deb python-zconfig
-  command 'vconfig' from deb vlan
-  command 'iconfig' from deb ipmiutil
-  command 'mconfig' from deb mono-devel
+
+       command 'fconfig' from deb redboot-tools
+       command 'zconfig' from deb python-zconfig
+       command 'vconfig' from deb vlan
+       command 'iconfig' from deb ipmiutil
+       command 'mconfig' from deb mono-devel
 
 
 # Search *.extension files for "data", then perfrom a word count on the results
