@@ -525,7 +525,7 @@ If you are on a Mac, we strongly suggest globally ignoring your .DS_Store file.
 There’s no need to ever share or track this file. To always ignore this file on 
 your machine, simply run these lines of code:
 
-# Run these lines on your terminal to configure git to ignore .DS_Store
+ Run these lines on your terminal to configure git to ignore .DS_Store
 git config --global core.excludesfile ~/.gitignore
 echo .DS_Store >> ~/.gitignore
 
