@@ -177,6 +177,9 @@ GIT
 
 ### Using Rstudtio
 
+       #Excecute from terminal
+              $  Rscript filename.R
+
 #### Script
 
        > Top left pane in the Rstudio = text editior to write R codes
@@ -216,6 +219,8 @@ GIT
        > also shows which packages are loaded
 
        > access the official documentation for the R language here
+
+
               
 
               
