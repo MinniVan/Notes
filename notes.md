@@ -73,30 +73,8 @@ GIT
        Enter file in which to save the key (/home/minnivan/.ssh/id_rsa): 
        Enter passphrase (empty for no passphrase): 
        Enter same passphrase again: 
-       Passphrases do not match.  Try again.
-       Enter passphrase (empty for no passphrase): 
-       Enter same passphrase again: 
        Your identification has been saved in /home/minnivan/.ssh/id_rsa.
        Your public key has been saved in /home/minnivan/.ssh/id_rsa.pub.
-       The key fingerprint is:
-       SHA256:FFzA366YU3GTtOP56FpY2Se7pJuDTACm2EZg5oyGVk8 vanthabikl@gmail.com
-       The key's randomart image is:
-       +---[RSA 4096]----+
-       |  +o E ooo.      |
-       |.*. + o o.  .    |
-       |ooo+ + ... o o   |
-       |o . +  .. o Bo   |
-       |   .    S. =o+o .|
-       |          oo+  + |
-       |         *.o.oo  |
-       |        + +.o+.. |
-       |         ..o=o.  |
-       +----[SHA256]-----+
-
-       minnivan@van-VM:~$ eval "$(ssh-agent -s)"
-       Agent pid 733
-       minnivan@van-VM:~$ ssh-add~/.ssh/id_rsa
-       bash: ssh-add~/.ssh/id_rsa: No such file or directory
        minnivan@van-VM:~$ ssh-add ~/.ssh/id_rsa
        Enter passphrase for /home/minnivan/.ssh/id_rsa: 
        Identity added: /home/minnivan/.ssh/id_rsa (/home/minnivan/.ssh/id_rsa)
@@ -165,3 +143,18 @@ GIT
        and then reverted. History is important; don’t mess with it!
 
 
+
+### .gitignore
+
+       {don't check in passworeds stored in this file}
+              secret/my_passwords.txt
+       
+       {Don't include large files or libraries}
+              movies/my_four_hour_epic.mov
+       {Ignore everything in a particular folder; note not the slash}
+              raw-data/
+
+       Easiest way to creat .gitignore file 
+              > on text editor : Select file > new > 
+              > make .gitignore file directly insdie the repo
+              
