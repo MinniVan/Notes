@@ -1,5 +1,6 @@
 # Scope of Work Summary
 #####       EA internship | Van Tha Bik Lian
+######      24 December 2018
 
 ## What do I want to accomplish in the last 6 months?
 
