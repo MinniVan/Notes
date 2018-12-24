@@ -151,10 +151,75 @@ GIT
        
        #Don't include large files or libraries
               movies/my_four_hour_epic.mov
-       #Ignore everything in a particular folder; note not the slash
+       #Ignore everything cd in a particular folder; note not the slash
               raw-data/
 
        #Easiest way to creat .gitignore file 
               > on text editor : Select file > new > 
               > make .gitignore file directly insdie the repo
+
+
+### R
+
+       Open source programing language | use for data stuff | yeah I said stuff
+
+       Scripting 
+              An instruction that is executed causing
+              each instructions(line of code) to run in
+              order, one after the other
+              > This allows us to run several commands at once
+              > Also -- Save, share and resuse work
+
+       R is interpreted language so you can separately execute each indivdual
+       line of code in the script
+
+       R scripts are saved with with .R extenstion
+
+### Using Rstudtio
+
+#### Script
+
+       > Top left pane in the Rstudio = text editior to write R codes
+              this pane is hidden if there are no open scritps
+              --> FIle > New File > R Script
+
+       #Execute R codes:
+              > Sectional execution
+                     - highlight desired code
+                     - click the run button
+                     - or ctr+enter
+
+              > Execute entire script
+                     - click the "Source" button (top right of the Script pane)
+                            (fun fact: this calls an R function called source())
+                     - or shift+ctrl+enter
+
+#### Console
+
+       > bottom-left pane is the console for entering R commands
+       > allows you to perfrom a task you don't want to save on your script
+
+#### Environment
+
+       > Top-right pane | Displays infro about the current R enviornment
+              - specifically info stored inside variables
+              
+              this pane helps with keeping track of which values
+              you have stored in which variables
+                     | useful for debugging | 
+
+
+#### Plots, pacakges, help, etc
+
+       > Bottom-right pane | contains multiple tabs for accessing info about the program
+       > plots are rendered here when visualization is created
+       > also shows which packages are loaded
+
+       > access the official documentation for the R language here
+              
+
+              
+
+
+       
 
