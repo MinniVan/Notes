@@ -146,7 +146,7 @@ GIT
 
 ### .gitignore
 
-       #don't check in passworeds stored in this file
+       #Don't check in passworeds stored in this file
               secret/my_passwords.txt
        
        #Don't include large files or libraries
