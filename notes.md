@@ -146,15 +146,15 @@ GIT
 
 ### .gitignore
 
-       {don't check in passworeds stored in this file}
+       #don't check in passworeds stored in this file
               secret/my_passwords.txt
        
-       {Don't include large files or libraries}
+       #Don't include large files or libraries
               movies/my_four_hour_epic.mov
-       {Ignore everything in a particular folder; note not the slash}
+       #Ignore everything in a particular folder; note not the slash
               raw-data/
 
-       Easiest way to creat .gitignore file 
+       #Easiest way to creat .gitignore file 
               > on text editor : Select file > new > 
               > make .gitignore file directly insdie the repo
-              
+
