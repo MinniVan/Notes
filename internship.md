@@ -1,5 +1,5 @@
 # Scope of Work Summary
-#####       EA internship
+#####       EA internship | Van Tha Bik Lian
 
 ## What do I want to accomplish in the last 6 months?
 
