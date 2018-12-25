@@ -220,6 +220,20 @@ GIT
 
        > access the official documentation for the R language here
 
+#### Example of commenting R codes
+       # Calculate the number of minutes in a year
+       minutes_in_a_year <- 365 * 24 * 60 # 525,600 minutes!
+
+       comment goes directly above the code line
+
+       changes made \
+
+
+
+       Khamtin sucks ass
+
+
+
 
               
 
