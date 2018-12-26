@@ -221,23 +221,34 @@ GIT
        > access the official documentation for the R language here
 
 #### Example of commenting R codes
+
        # Calculate the number of minutes in a year
        minutes_in_a_year <- 365 * 24 * 60 # 525,600 minutes!
 
        comment goes directly above the code line
 
-       changes made \
+### Defineing Vairables
 
+       > Can contain a combo of:
+              - Letters
+              - Numbers
+              - Periods (.)
+              - Underscores (_)
+              >> Must begin witha letter
+       > Case sesnsitve
+       > Important to have the varibale name as descriptive as possible
+       >> "x" is not a good variable name
+       >> num_cups_cofee is good
+       >> Variables are used to store information and we refer to that
+          variable to access the inf stored in the varaible
+              - think of it as "'boxes' or 'name tags' for data"
+       >> Variable names should be lowecase letters seperated by underscores
+              <known as snake_case>
+       >> a value is assigned to a variable with the use of the assignment opperator
+              |looks like this: <-
+                            num_cups_coffee <-
 
-
-       Khamtin sucks ass
-
-
-
-
-              
-
-              
+                 
 
 
        
