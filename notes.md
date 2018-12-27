@@ -248,6 +248,7 @@ GIT
               |looks like this: <-
                             num_cups_coffee <-
 
+#### Example of defining and commenting variables
        # Calculate the money spent on coffee using values stored in variables
        num_cups_coffee <- 3 # store 3 in `num_cups_coffee`
        coffee_price <- 3.5 # store 3.5 in `coffee_price`
@@ -260,6 +261,8 @@ GIT
        money_spent_on_four_cups <- coffee_price * 4 # total spent on 4 cups of coffee
        print(money_spent_on_four_cups)
        # [1] 14
+
+
 
 
 
