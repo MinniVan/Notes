@@ -227,7 +227,7 @@ GIT
 
        comment goes directly above the code line
 
-### Defineing Vairables
+### Defining Vairables
 
        > Can contain a combo of:
               - Letters
@@ -247,6 +247,21 @@ GIT
        >> a value is assigned to a variable with the use of the assignment opperator
               |looks like this: <-
                             num_cups_coffee <-
+
+       # Calculate the money spent on coffee using values stored in variables
+       num_cups_coffee <- 3 # store 3 in `num_cups_coffee`
+       coffee_price <- 3.5 # store 3.5 in `coffee_price`
+       money_spent_on_coffee <- num_cups_coffee * coffee_price # total spent on coffee
+       print(money_spent_on_coffee)
+       # [1] 10.5
+       
+       # Alternatively, you can use a mixture of numeric values and variables
+       # Calculate the money spent on 4 cups of coffee
+       money_spent_on_four_cups <- coffee_price * 4 # total spent on 4 cups of coffee
+       print(money_spent_on_four_cups)
+       # [1] 14
+
+
 
                  
 
