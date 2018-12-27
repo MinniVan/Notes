@@ -26,7 +26,6 @@ across multiple lines
 
 
 ### Rendering Markdown
-
 GitHib automactically renders a Markdown that ends with the .md extension
 
 
@@ -65,7 +64,6 @@ GIT
              recombine work from different developers.
 
 ### git config
-
        minnivan@van-VM:~$ git config --global user.name "Van Tha Bik Lian"
        minnivan@van-VM:~$ git config --global user.email "vanthabikl@gmail.com"
        minnivan@van-VM:~$ ssh-keygen -t rsa -b 4096 -C "vanthabikl@gmail.com"
@@ -81,7 +79,6 @@ GIT
 
 
 ### Command Summary
-
        git status                | Checks the status of a repo
        git add                   | Add file to the staging area
        git commit -m "message"   | Commit changes
@@ -93,7 +90,6 @@ GIT
 
 
 #### look up commands
-
        command 'fconfig' from deb redboot-tools
        command 'zconfig' from deb python-zconfig
        command 'vconfig' from deb vlan
@@ -106,18 +102,15 @@ GIT
 
 
 ### Securly copy the local file [file]  into the projects folder on the remote machine
-
 ` scp MY_LOCAL_FILE username@hostname:path/to/destination `
 
 
 ### Creating a repo to push
-
        minnivan@van-VM:~/Desktop/Notes$ git remote add origin URL
        minnivan@van-VM:~/Desktop/Notes$ git remote -v
        minnivan@van-VM:~/Desktop/Notes$ git push -u origin master
 
-### Reverting back to an older version
-       
+### Reverting back to an older version      
        **git checkout COMMIT_HASH FILENAME**
        replace COMMIT_HAS and FILE name
        with the commit ID hash and the 
@@ -160,7 +153,6 @@ GIT
 
 
 ### R
-
        Open source programing language | use for data stuff | yeah I said stuff
 
        Scripting 
@@ -176,12 +168,10 @@ GIT
        R scripts are saved with with .R extenstion
 
 ### Using Rstudtio
-
        #Excecute from terminal
               $  Rscript filename.R
 
 #### Script
-
        > Top left pane in the Rstudio = text editior to write R codes
               this pane is hidden if there are no open scritps
               --> FIle > New File > R Script
@@ -198,7 +188,6 @@ GIT
                      - or shift+ctrl+enter
 
 #### Console
-
        > bottom-left pane is the console for entering R commands
        > allows you to perfrom a task you don't want to save on your script
 
@@ -213,7 +202,6 @@ GIT
 
 
 #### Plots, pacakges, help, etc
-
        > Bottom-right pane | contains multiple tabs for accessing info about the program
        > plots are rendered here when visualization is created
        > also shows which packages are loaded
@@ -221,14 +209,12 @@ GIT
        > access the official documentation for the R language here
 
 #### Example of commenting R codes
-
        # Calculate the number of minutes in a year
        minutes_in_a_year <- 365 * 24 * 60 # 525,600 minutes!
 
        comment goes directly above the code line
 
 ### Defining Vairables
-
        > Can contain a combo of:
               - Letters
               - Numbers
@@ -261,6 +247,9 @@ GIT
        money_spent_on_four_cups <- coffee_price * 4 # total spent on 4 cups of coffee
        print(money_spent_on_four_cups)
        # [1] 14
+
+### Basic Data Types
+       
 
 
 
