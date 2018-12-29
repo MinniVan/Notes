@@ -249,14 +249,44 @@ GIT
        # [1] 14
 
 ### Basic Data Types
+       > R is a dynamically typed language
+              >> meaning we don't have to explicitly state which tye of information 
+                 will be stored in each variable
+
+              -- in Java (statically typed language), to define a variable that 
+                 represents the integer value 7, we would define it as: int num = 7;
+                 but in R: my_num <- 7       : is understood by R to be the interger 7
+       > Numberic:
+              The default computational data type in R
+              >> consists of the set of real numbers (decimals included)
+
+       > Character:
+              This data stores strings of characters in a variable
+              >> characters are specified by single quotes('character') or double ("character")
+
+       > Logical:
+              AKA boolea -> this data type stores "yes-or-no" data.
+              >> Can have one of two values: TRUE or FALSE
+              >>> produced by applying a relational operator (comparison operator) to
+                  some other
+
+       > Integer:
+              integer(whole number) -> yes, it's different from the numeric type
+              >> Rarely used --- we can specify a number to be the integer type 
+                 by putting an L after the number:
+                     : my_integer <- 10L
+       > Complex:
+              Imaginary numbers
+              >> created by placing an i after the number
+                     : complex_variable <- 2i
+
+3RDocumentation.org: https://www.rdocumentation.org4R
+Studio Community: https://community.rstudio.com
        
 
+http://swrilstats.com
 
+ https://github.com/programming-for-data-science/chapter-05-exercises
 
-
-
-                 
-
-
-       
+ 
 
