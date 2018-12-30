@@ -1,4 +1,4 @@
-_text_   --> italicized
+
 **text*  --> bolded
 'text'   --> inline code
 --text-- --> strike through
