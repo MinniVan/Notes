@@ -288,5 +288,61 @@ http://swrilstats.com
 
  https://github.com/programming-for-data-science/chapter-05-exercises
 
+ ### Functions
+       > Represents a way to add a label to a group of instructions
+              >> a named sequence of instrutions(lines of codes) that we may want to perform
+                 one or more times throughout the program
+              >> they provide a way of encapsulating mulpiple instructions in a single "unit"
+                 that can be used in a variety of contexts 
+              >> functions are performed on some inputs that lead to outputs
+                     .. inputs are called arguments(parameters)
+                            > specifying an arguments is called passing the argument into the
+                              fucntion
+              >> functions return an output for use
+
+#### Syntax  for functions in R
+       > # Call the print() function, passing it "Hello world" as an argument
+         print("Hello world")
+         # [1] "Hello world"
+
+       > # Call the sqrt() function, passing it 25 as an argument
+         sqrt (25) 
+         # returns 5 (square root of 25)
+       
+       > # Call the min() function, passing it 1, 6/8, and 4/3 as arguments
+         # This is an example of a function that takes multiple arguments
+         min(1, 6 / 8, 4 / 3) 
+         # returns 0.75 (6/8 is the smallest value)
+
+       Quick-R: Built-in Functions: http://www.statmethods.net/management/functions.html
+
+       R Reference Card: cheatsheet summarizing built-in R functions: https://cran.r-project.org/doc/contrib/Short-refcard.pdf
+
+#### Named Arguments
+       > required arguments: values we have to provide
+       > optional arguments: has a default value, unless specified
+              >> done using named arguments
+                     specify that an argument value has a particular name
+                     >> written by putting the name of the arguments, followed by an equal sign
+
+                     Example: 
+                     # Use the `sep` named argument to specify the separator is '+++'
+                     paste("Hi", "Mom", sep = "+++") 
+                     # returns "Hi+++Mom"
+
+              >> Positional arguments
+              # These function calls are all equivalent, though the 2nd is most clear/common
+              round(3.1415, 3) # 3.142
+              round(3.1415, digits = 3) # 3.142
+              round(digits = 3, 3.1415) # 3.142
+
+              
+
+
+       
+
+
+
+
  
 
