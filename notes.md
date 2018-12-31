@@ -336,6 +336,98 @@ http://swrilstats.com
               round(3.1415, digits = 3) # 3.142
               round(digits = 3, 3.1415) # 3.142
 
+#### Loading functions
+       > Packages or libraries are additional sets of R functions written and published by the 
+         R community
+
+       >> Popular packages
+              >> manipulating data (dplyr)
+              >> making beautiful graphics (ggplot2)
+              >> implementing machine learning algorithms (randomForest)
+              >> improve style (lintr)
+                     lint("MY_FILENAME.R") and style_file("MY_FILENAME.R") (using the appropriate filename) to help ensure you have used good code style.
+
+       >> install.packages() --> function for installing packages
+       >> library() --> functions for loading the packages in current session
+
+       # Install the 'stringr' package. Only needs to be done once per computer
+       install.packages("stringr")
+
+       # Load the package (make 'stringr' function available in thie 'R' session)
+       library("stringr") # quotes optional here, but best to include them
+              > This packages provies a function called str_count()
+                    
+                     # How many i's are in Mississippi?
+                     str_count("Mississippi, "i") #4
+
+                     # Explicitly call the namespaced `str_count` function. Not very common.
+                     stringr::str_count("Mississippi", "i") # 4
+
+       .libPaths(): tells us where the packages are stored
+
+#### Writing Functions
+       # A functions named 'make_full_name' that takes two arguments
+       # and returns the "full_name" made from them
+       make_full_name <- function(first_name, last_name) {
+              # Function body: perfroms tasks in here
+              full_name <- paste(first_name, last_name)
+
+              # Function will *return* the value of the last line
+              full_name
+       }
+
+       >> function is written using the function keyword to indicate that we are creating
+          function, and not just storing values to a variable
+
+       >> written in snake_case, and named using verbs
+              > the name should clearly suggest that it does (without becoming too long)
+
+       > Breaking down the function
+
+              >> Arguments: function(the words here are arguments that would be passed)
+                     :to the make_full_name example. first_name, and last_name are the
+                      arguments that will be passed, and full_name only exists within this
+                      particular function ---> (within the scope of the function)
+              
+              >> Body: the block of code that falls between the curly braces {}
+                            > the body specifies all instructions(lines of codes) that the
+                              function will perform
+                                   - more than one line, less than 20
+              >> Return value: whatever value is evaluated in the last statement(line) of the
+                               the function is returned as the output
+
+                               > we can explicitly state what value to return
+                                 return(x*y)
+                               > this is only good style when we want to return a value that
+                                 comes before the final statement(line)    
+
+#### Debugging Functions
+       > Identfying errors within a function can be complex
+              >> requires you to search accross the entire function to find the source of error
+              look at the codes - see where the error may have occured, run tests ---
+
+#### Using Conditional Statements
+       > program flow can be controlled by specifying different instructions that can be ran 
+         based on different sets of conditions
+
+         >> Conditional statements allows us to specify different blocks of code to run when
+            given different contexts (often valuable within functions)
+
+              >> Abstract
+                     IF something is true
+                            do some lines of code
+                     OTHERWISE
+                            do some other lines of code
+
+              >> generic
+                     if (condition){
+                            # lines of code to run if 'condition' is TRUE
+                     } else {
+                            # lines of code to run if 'condition' is FALSE
+                     }
+                             
+
+
               
 
 
