@@ -425,16 +425,119 @@ http://swrilstats.com
                      } else {
                             # lines of code to run if 'condition' is FALSE
                      }
-                             
 
+### Vectors
+       > Vectors are the fundamental data type in R
+              >> they are one-dimensional collections of values that are all stored in a single 
+                 variable
+                 >> each value in a vector is referred to as an element of that vector
+                     > these values should be of the same type
 
-              
+#### Creating Vectors
+       > easiest and most common: use the c() function
 
-
+       # use the 'c()' function to create a vector of character values
+       people <- c("Sarah", "Amit", "Zhang")
        
 
+        # use the 'c()' function to create a vector of numeric values
+        numbers <- c(1, 2, 3, 4, 5, 6, 7)
+
+       numbers[2] = 2 ---> indicies starts with 1
+
+#### Vetorized operations
+       --Read on phone - all good- no notes needed really- 
+              vectors are like Java's arrays
+                     indices starts at 1, werid
+
+                     can add vectors
+
+                     c(14, 4, 5, 2) + c(2, 7, 3, 5) = c(14, 13, 8, 7)
+
+                     recyling
+                     c(1, 4) + c(3, 7, 2, 8, 9, 4) = c(4, 13, 3, 12, 10, 5)
+                            same as c(1, 4, 1, 4, 1, 4) + ....
+
+
+ #### Vectorized functions
+       All basic data types are stored as vectors
+              - so almost every function encountered so far can be applied to vectors
+
+              single variables are just instances of vectors
+
+              we can use nearly every function on a vector
+
+              round(1.67, 1) 
+
+              nums <- c(3.542, 4.54, 32.43)
+              round(nums, 1) # BOOM!
+
+              when using a function on a vector - we are using the function on each item of the vector, as such:  
+                     
+                     # nchar() will run on each elements of the intro
+                     > intro <- c("what", "is", "ogood", "homies")
+                     > nchar(intro)
+                     [1] 4 2 5 6
+
+              "Vectorization in R: Why?"
+              http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html
+
+
+#### Vector indices
+              a_vector --> with elements
+              a_vector[-7] will return all elements except for the element on index 7
+
+              more cool things about indices
+              # Create a `colors` vector
+              colors <- c("red", "green", "blue", "yellow", "purple")
+       
+              # Vector of indices (to extract from the `colors` vector)
+              indices <- c(1, 3, 4)
+       
+              # Retrieve the colors at those indices
+              extracted <- colors[indices]
+              print(extracted)
+              # [1] "red" "blue" "yellow"
+       
+              # Specify the index vector anonymously
+              others <- colors[c(2, 5)]
+              print(others)
+              # [1] "green" "purple"
+
+              #using colon operator : to quickly specify a range
+
+              # Create a `colors` vector
+              colors <- c("red", "green", "blue", "yellow", "purple")
+              
+              # Retrieve values in positions 2 through 5
+              print(colors[2:5])
+              # [1] "green" "blue" "yellow" "purple"
+
+#### Vector filtering
+       We can put a vector of logical values _what_????
+              - specifies what we want to return
+
+              TRUE in the corresponding postion means return that element
+              FALSE means don't return that element
+
+              example:
+
+              # Create a vector of shoe sizes
+              shoe_sizes <- c(5.5, 11, 7, 8, 4)
+
+              # Vector of booleans (to filter the 'shoe_sizes' vector)
+              filter <- c(TRUE, FALSE, FALSE, FALSE, TRUE)
+
+              # Extract every element in an index that is TRUE
+              print(shoe_sizes[filter])
+              # [1] 5.5 4
 
 
 
- 
+
+
+
+
+
+
 
