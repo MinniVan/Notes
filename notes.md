@@ -532,6 +532,66 @@ http://swrilstats.com
               print(shoe_sizes[filter])
               # [1] 5.5 4
 
+              shoes_sizes <- c(5.5, 11, 7, 8, 4)
+
+              shoes_is_small <- shoes_sizes < 6.5 # creates a vector of a booleans
+
+              small_shoes <- shoes_sizes[shoes_is_small]
+
+
+#### Modifying vectors
+       prices <- c(25, 28, 30) # [25, 28, 30]
+       prices[1] <- 20
+
+       # prices --> [20, 28, 30]
+
+       # Create a new element in the vector
+
+       # add a fourth price
+       prices[4] <- 32
+
+       # add a new price(35) to the end of the vector
+       new_index <- length(prices) + 1# the "end" is the 1 after the last element
+       prices[new_index] <- 35
+
+       # create a vector of school supplies
+       school_supplies <- c("Backpack", "Laptop", "Pen")
+
+       # replace "Laptop" with "Tablet" and "Pen" with "Pencil"
+       school_supplies[ c(2, 3)] <- c("Tablet", "Pencil")
+
+
+       for the sake accidently losing data, when adding info at the end of vectors, it's smarter to combine the current vector with the vector of new infos, or just the new infro itself
+
+       people <- "Sarah", "Amit", "Zhang")
+
+       # Add "Josh" to the vector
+       more_people <- c(people, "Josh")
+
+       > vector modification can be combined with vector filtering as well
+
+       # Create a vector of values
+       v1 <- c(1, 5, 55, 1, 3, 11, 4, 27)
+
+       # Replace all values greater than 10 with 10
+       v[v1 > 10} <- 10 # returns 1, 5, 10, 1, 3, 10, 4, 10
+
+
+       VECTORS PROVID A POWERFUL WAY OF ORGANIZING AND GROUPING DATA FOR ANALYSIS
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
 
 
 
