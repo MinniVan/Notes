@@ -574,10 +574,10 @@ http://swrilstats.com
        v1 <- c(1, 5, 55, 1, 3, 11, 4, 27)
 
        # Replace all values greater than 10 with 10
-       v[v1 > 10} <- 10 # returns 1, 5, 10, 1, 3, 10, 4, 10
+       v[v1 > 10] <- 10 # returns 1, 5, 10, 1, 3, 10, 4, 10
 
 
-       VECTORS PROVID A POWERFUL WAY OF ORGANIZING AND GROUPING DATA FOR ANALYSIS
+       VECTORS PROVID A POWERFUL WAY OF ORGANIZING AND GROUPING DATA FOR ANALYSISu8
 
 
 
